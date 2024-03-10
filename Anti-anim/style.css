@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+/* parent starts */
 .parent {
     display: grid;
     grid-template-columns: repeat(2, 1fr) repeat(2, .75fr);
@@ -14,6 +16,8 @@
     padding: 20px;
 
 }
+
+/* parent ends */
 
 
 /* first container starts */
@@ -29,7 +33,7 @@
     padding: 40px;
 }
 
-.div1 p i{
+.div1 p i {
     width: 100px;
 }
 
@@ -105,18 +109,29 @@
     background-position: center;
 }
 
-.div4 button:nth-of-type(1) {
+.div4>button:nth-of-type(1) {
     position: absolute;
     top: 35%;
     left: 40%;
-    width: 70px; /* Adjust width and height as needed */
-    height: 70px; /* Adjust width and height as needed */
+    width: 70px;
+    /* Adjust width and height as needed */
+    height: 70px;
+    /* Adjust width and height as needed */
     border-radius: 50%;
     background: transparent;
     color: #ffffff;
     font-weight: bold;
 }
 
+.div4 .btn-group {
+    position: absolute;
+    top: 94%;
+    left: 2%;
+}
+
+.div4 .btn-group .input-group {
+    margin-inline: 20px;
+}
 
 
 /* fourth container ends */
